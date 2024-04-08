@@ -4,25 +4,29 @@
 
 ### Abstract
 
-With the establishment of standards, the QUIC protocol is receiving increasing attention from major technology companies, and more and more QUIC implementations are being developed. As the core protocol of HTTP/3, the security of QUIC will continue to be of concern. In this regard, this report will start from the version negotiation mechanism of QUIC to introduce an request forgery attack based on this mechanism. We analyze the controllable attack space of the respective protocol messages and demonstrate that one of the attack modalities can indeed be utilized to impersonate other UDP-based protocols, e.g., DNS requests.
+The QUIC protocol is receiving increasing attention from major technology companies since the establishment of standerization by IETF, and more and more QUIC implementations are being developed. As the core protocol of HTTP/3, the security of QUIC will continue to be of concern. In this regard, this report will start from the version negotiation mechanism of QUIC to introduce an request forgery attack based on this mechanism. We analyze the controllable bits of the version negotiation messages and show that this scheme can be utilized to impersonate other UDP-based protocols, e.g., DNS requests.
 
 
 
-## 1. Introduction
+## 1. Background
 
-### 1.1 QUIC Basis
+QUIC (Quick UDP Internet Connections) is a novel transport layer protocol designed to offer faster, more reliable, and more secure network connections. Initially developed by Google, QUIC serves as an alternative to TCP and TLS for transmitting data over the Internet. It is built on top of the UDP protocol, enabling it to bypass the TCP connection establishment process, thereby reducing connection latency and enabling faster connection recovery during network switches.
 
-The QUIC protocol is an innovative development of transport layer stream abstraction. It combines the capabilities of TCP and TLS 1.3 to reduce the amount of required round-trip times (RTTs) during the connection setup. It can achieve a true 0-RTT connection setup for known endpoints, improving performance in high-latency networks [1]. With recent standardization efforts of the QUIC protocol by the IETF in 2021 [2]–[5] and through the support of many well known companies like Apple, Cloudflare, Facebook, Google, and Mozilla, QUIC is gaining more traction. Lastly, QUIC’s importance increased by choosing it to be the core protocol of the new HTTP/3 standard. The adoption of QUIC results in one of the biggest changes to the web’s protocol stack [6] and spawned the development of various new implementations [7]. 
+The development journey of QUIC has been marked by significant milestones. Google first introduced QUIC in 2013 as an experimental protocol to address latency issues. Over time, it underwent several iterations and refinements, with the IETF (Internet Engineering Task Force) officially adopting it as an Internet standard in 2020, known as QUIC Version 1.
 
-In order to achieve compatibility with the Internet protocol stack, QUIC was built on top of UDP [3]. While providing transport layer functionality, QUIC is technically an application layer protocol with its own addressing scheme [1]. QUIC’s addressing allows the underlying UDP port and IP address to change, while the connection persists. The QUIC protocol handles the migration of endpoints. To this end, a server has to send UDP datagrams to an unknown endpoint.
+Various tech giants have actively researched and contributed to the advancement of QUIC. Google, being the original developer, has been a major driving force behind its development. Additionally, companies like Cloudflare, Facebook (now Meta Platforms), and Microsoft have also been actively involved in QUIC research and implementation.
 
-As a consequence, QUIC seems particularly vulnerable to address spoofing and request forgery. The specification acknowledges the vulnerabilities and provides first security considerations [3].
+As mentioned above, QUIC will keep connection persistant during network switches, allowing the peer UDP port and IP address to be changed. This mechanism is called Connection Migration in QUIC. In this situation, a server may send UDP packets to an unknown host. As a consequence, QUIC is certainly vulnerable to address spoofing and request forgery. The specification also acknowledges the vulnerabilities and provides first security considerations [3].
 
 In this report, we take a detailed look at version negotiation request forgery attack. To this end, we focus on request forgery attacks initiated by a QUIC client (the attacker). In this scenario, request forgery induces a QUIC server (the victim) to send packets that the attacker controls. The attacker can use the server’s position in the network to gain higher privileges.
 
+## 2. Request Forgery
+
+### 2.1 QUIC Basics
+
 The QUIC handshake(Fig. 3) combines the transport layer handshake and the TLS cryptographic handshake. The initial packets resemble the 3-way handshake of TCP, while the TLS parameters are carried in CRYPTO frames. All packets in the handshake use the long header format and contain a Source Connection ID (SCID) as well as a Destination Connection ID (DCID)  with the corresponding lengths.  If a server receives an unknown version, it will answer with a version negotiation packet, providing a list of supported versions. Version negotiation packets must always have the version identifier 0x00000000 [3].
 
-### 1.2 Request Forgery Model
+### 2.2 Threat Model
 
 Request forgery attacks occur when an attacker is able to trigger a host (victim) to send one or more “unintended” network requests to another host (target).  An attacker can leverage the request forgery for achieving two goals, which are illustrated in Fig. 4: First, utilizing the higher authority of the victim, i.e., internal/restricted network access or higher privileges. Second, utilizing the higher bandwidth available from the server to a target.
 
