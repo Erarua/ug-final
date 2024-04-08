@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2024-04-08T07:08:53.124Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="1PBD4fVyCWHa20pgxe3u" version="24.1.0" type="device">
+  <diagram name="第 1 页" id="3j34ZxMN2y8uB0sXYOvv">
+    <mxGraphModel dx="964" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#0D0D0D;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="270" as="sourcePoint" />
+            <mxPoint x="410" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-6" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;QUIC Server (Victim)&lt;/font&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="414" y="212.70000000000002" width="88.2" height="114.6" as="geometry" />
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Target&lt;/font&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="570" y="212.70000000000002" width="88.2" height="114.6" as="geometry" />
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Attacker&lt;/font&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
+          <mxGeometry x="130" y="222.76999999999998" width="69.69" height="94.46" as="geometry" />
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-10" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.496;exitY=0.002;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.496;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="AwIdHr2ZWodqFg5j_Fdy-9" target="AwIdHr2ZWodqFg5j_Fdy-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="165" y="160" />
+              <mxPoint x="614" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Permission Denial&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AwIdHr2ZWodqFg5j_Fdy-10">
+          <mxGeometry x="0.2068" y="-3" relative="1" as="geometry">
+            <mxPoint x="-152" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Firewall&lt;/font&gt;" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" vertex="1" parent="1">
+          <mxGeometry x="270" y="223.5" width="75" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-11" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x;fillColor=#0D0D0D;" vertex="1" parent="1">
+          <mxGeometry x="350" y="146" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AwIdHr2ZWodqFg5j_Fdy-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1.014;exitY=0.504;exitDx=0;exitDy=0;exitPerimeter=0;endWidth=51;endSize=8.69;width=33;fillColor=#0D0D0D;" edge="1" parent="1" source="AwIdHr2ZWodqFg5j_Fdy-6" target="AwIdHr2ZWodqFg5j_Fdy-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
