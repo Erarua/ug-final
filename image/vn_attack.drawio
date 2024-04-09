@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-04-09T03:02:00.198Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="eBPjkqiHm4dhloEmR62b" version="24.2.3" type="device">
+  <diagram name="第 1 页" id="1jsvmSTCI1rwZLEqbIUQ">
+    <mxGraphModel dx="1295" dy="912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e2ddqZojoZUfVC97NUGw-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Attacker&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;IP:192.168.X.X&lt;/font&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100.00000000000001" width="59.03" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="227.3" as="sourcePoint" />
+            <mxPoint x="50" y="507.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="373.6" y="227.3" as="sourcePoint" />
+            <mxPoint x="373.6" y="507.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;QUIC Server&lt;/font&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="330" y="82.7" width="88.2" height="114.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="287.3" as="sourcePoint" />
+            <mxPoint x="330" y="287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-6" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Initial Packet&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;with&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Unknow Version&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;src IP: 8.8.8.8&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;src Port:53&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="397.3" as="sourcePoint" />
+            <mxPoint x="610" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Version Negotiation&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Packet&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;dst IP: 8.8.8.8&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;dst Port:53&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="643.6" y="230" as="sourcePoint" />
+            <mxPoint x="643.6" y="509.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2ddqZojoZUfVC97NUGw-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Host&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;IP: 8.8.8.8&lt;/font&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="600" y="82.7" width="88.2" height="114.6" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
