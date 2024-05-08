@@ -1,0 +1,66 @@
+<mxfile host="Electron" modified="2024-05-08T07:37:00.233Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="VqiO11CxOjO9eoK4eIlQ" version="24.1.0" type="device">
+  <diagram name="第 1 页" id="c3PG0Vdzn4M2waXgXPgy">
+    <mxGraphModel dx="1098" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;ip: 192.168.x.x&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
+          <mxGeometry x="130" y="132.8" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;QUIC Server&lt;/b&gt;&lt;/font&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="330" y="121.4" width="65.11" height="84.6" as="geometry" />
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Target&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;ip: 8.8.8.8&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="540" y="110" width="65.11" height="84.6" as="geometry" />
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="240" as="sourcePoint" />
+            <mxPoint x="150" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="362.06" y="240" as="sourcePoint" />
+            <mxPoint x="362.06" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="572.06" y="240" as="sourcePoint" />
+            <mxPoint x="572.06" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-7" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="280" as="sourcePoint" />
+            <mxPoint x="350" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;QUIC Handshake&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nRCToiVyZ8xz02Hv_vPA-7">
+          <mxGeometry x="-0.0526" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="370" as="sourcePoint" />
+            <mxPoint x="350" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;QUIC Packet&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;src ip: 8.8.8.8&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;src port: 53&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175.6" y="320" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=48;endSize=9.67;strokeWidth=1;width=48;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="460" as="sourcePoint" />
+            <mxPoint x="560" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRCToiVyZ8xz02Hv_vPA-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;PATH_CHALLENGE&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;dst ip: 8.8.8.8&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;dst port: 53&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="385.6" y="390" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
